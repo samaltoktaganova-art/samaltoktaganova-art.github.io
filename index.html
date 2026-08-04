@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AQAN HOLDING</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    min-height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:25px;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.logo span{
+    color:#d40000;
+}
+
+/* MENU */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    align-items:center;
+    gap:30px;
+}
+
+nav li{
+    margin:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:#d40000;
+}
+
+/* =========================
+   LANGUAGE BUTTONS
+========================= */
+
+.language-switcher{
+    display:flex;
+    gap:6px;
+    align-items:center;
+}
+
+.language-switcher button{
+    padding:8px 11px;
+
+    background:white;
+    color:#d40000;
+
+    border:1px solid #d40000;
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:13px;
+    font-weight:bold;
+
+    transition:.2s;
+}
+
+.language-switcher button:hover{
+    background:#d40000;
+    color:white;
+}
+
+.language-switcher button.active{
+    background:#d40000;
+    color:white;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    width:90%;
+    max-width:1400px;
+
+    margin:60px auto;
+
+    gap:50px;
+}
+
+.text{
+    flex:1;
+}
+
+.text h1{
+    font-size:60px;
+    line-height:1.1;
+}
+
+.text h1 span{
+    color:#d40000;
+}
+
+.redline{
+    width:120px;
+    height:5px;
+
+    background:#d40000;
+
+    margin:20px 0;
+}
+
+.text p{
+    font-size:20px;
+    line-height:1.6;
+
+    margin-bottom:20px;
+}
+
+/* MAIN BUTTON */
+
+.main-button{
+    padding:15px 35px;
+
+    background:#d40000;
+    color:white;
+
+    border:none;
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:17px;
+    font-weight:bold;
+
+    transition:.2s;
+}
+
+.main-button:hover{
+    background:#a90000;
+    transform:translateY(-2px);
+}
+
+/* IMAGE */
+
+.image{
+    flex:1;
+}
+
+.image img{
+    width:100%;
+    max-height:500px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    display:block;
+}
+
+/* =========================
+   ABOUT BOX
+========================= */
+
+.about-box{
+    display:none;
+
+    background:white;
+
+    margin-top:30px;
+    padding:30px;
+
+    border-left:5px solid #d40000;
+
+    border-radius:8px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    line-height:1.7;
+}
+
+.about-box.show{
+    display:block;
+}
+
+.about-box h2{
+    margin-bottom:20px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    width:90%;
+    max-width:1400px;
+
+    margin:80px auto;
+}
+
+section h2{
+    margin-bottom:25px;
+
+    color:#d40000;
+
+    font-size:32px;
+}
+
+section p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+.card-link{
+    text-decoration:none;
+    color:#222;
+
+    flex:1;
+
+    min-width:250px;
+}
+
+.card{
+    background:white;
+
+    padding:30px;
+
+    min-height:160px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#d40000;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+/* =========================
+   CONTACTS
+========================= */
+
+.contacts p{
+    margin:10px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#1b1b1b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:80px;
+
+    line-height:1.6;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:1000px){
+
+    nav{
+        flex-wrap:wrap;
+
+        padding:15px 0;
+    }
+
+    nav ul{
+        order:3;
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+    }
+
+    .hero{
+        flex-direction:column;
+
+        margin-top:40px;
+    }
+
+    .text{
+        width:100%;
+    }
+
+    .image{
+        width:100%;
+    }
+
+    .text h1{
+        font-size:45px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+        justify-content:center;
+    }
+
+    .logo{
+        width:100%;
+
+        text-align:center;
+    }
+
+    nav ul{
+        font-size:14px;
+    }
+
+    .language-switcher{
+        width:100%;
+
+        justify-content:center;
+    }
+
+    .text h1{
+        font-size:38px;
+    }
+
+    .text p{
+        font-size:17px;
+    }
+
+    section h2{
+        font-size:27px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<nav>
+
+    <div class="logo">
+        AQAN <span>HOLDING</span>
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html" data-key="home">
+                Главная
+            </a>
+        </li>
+
+        <li>
+            <a href="#about" data-key="about">
+                О компании
+            </a>
+        </li>
+
+        <li>
+            <a href="#partners" data-key="partners">
+                Партнеры
+            </a>
+        </li>
+
+        <li>
+            <a href="#contacts" data-key="contacts">
+                Контакты
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- ПЕРЕВОДЧИК -->
+
+    <div class="language-switcher">
+
+        <button
+            id="ruButton"
+            onclick="changeLanguage('ru')">
+            RU
+        </button>
+
+        <button
+            id="kkButton"
+            onclick="changeLanguage('kk')">
+            KZ
+        </button>
+
+        <button
+            id="enButton"
+            onclick="changeLanguage('en')">
+            EN
+        </button>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<div class="hero">
+
+
+<div class="text">
+
+    <h1>
+        AQAN <span>HOLDING</span>
+    </h1>
+
+
+    <div class="redline"></div>
+
+
+    <p data-key="hero1">
+        Высокое европейское качество промышленного оборудования.
+    </p>
+
+
+    <p data-key="hero2">
+        Официальный партнер международных производителей.
+    </p>
+
+
+    <button
+        class="main-button"
+        onclick="showInfo()"
+        data-key="more">
+
+        Подробнее
+
+    </button>
+
+
+    <!-- ИНФОРМАЦИЯ -->
+
+    <div
+        id="aboutBox"
+        class="about-box">
+
+        <h2 data-key="history">
+            История AQAN HOLDING
+        </h2>
+
+
+        <p data-key="historyText">
+
+AQAN HOLDING LLP — казахстанская компания, зарегистрированная в городе Астана,
+специализирующаяся на поставке промышленного оборудования, электротехнической
+продукции и комплексных инженерных решений.
+
+Компания сотрудничает с ведущими европейскими производителями промышленного
+оборудования и является официальным партнером нескольких международных брендов.
+
+Основной целью компании является обеспечение предприятий Казахстана и стран
+Евразийского экономического союза современным оборудованием высокого качества,
+соответствующим международным стандартам безопасности.
+
+AQAN HOLDING предоставляет услуги по поставке оборудования, техническому
+сопровождению, монтажу, сервисному обслуживанию и консультационной поддержке.
+
+Компания является официальным представителем европейских производителей и
+обладает эксклюзивными правами на реализацию продукции на территории стран ЕАЭС,
+что подтверждается сертификатами и официальными письмами партнеров.
+
+Благодаря сотрудничеству с компаниями HARDO, Grupa Wolff и DEMKA AQAN HOLDING
+предлагает современные решения для промышленных предприятий, нефтегазовой,
+горнодобывающей, энергетической и строительной отраслей.
+
+Сегодня компания продолжает расширять партнерскую сеть, внедрять новые
+технологии и обеспечивать клиентов надежным европейским оборудованием.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- КАРТИНКА -->
+
+<div class="image">
+
+    <img
+        src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200"
+        alt="Промышленное оборудование">
+
+</div>
+
+</div>
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section id="about">
+
+    <h2 data-key="aboutTitle">
+        О компании
+    </h2>
+
+
+    <p data-key="aboutText">
+
+AQAN HOLDING занимается поставкой промышленного оборудования,
+кабельной продукции, монтажом и технической поддержкой.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================
+     PARTNERS
+========================================= -->
+
+<section id="partners">
+
+    <h2 data-key="partnersTitle">
+        Наши партнеры
+    </h2>
+
+
+    <div class="cards">
+
+
+        <!-- HARDO -->
+
+        <a
+            href="hardo.html"
+            class="card-link">
+
+            <div class="card">
+
+                <h3>
+                    HARDO
+                </h3>
+
+                <p data-key="hardoText">
+                    Сертифицированный партнер.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- GRUPA WOLFF -->
+
+        <a
+            href="grupa-wolff.html"
+            class="card-link">
+
+            <div class="card">
+
+                <h3>
+                    Grupa Wolff
+                </h3>
+
+                <p data-key="wolffText">
+                    Официальный партнер.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- DEMKA -->
+
+        <a
+            href="demka.html"
+            class="card-link">
+
+            <div class="card">
+
+                <h3>
+                    DEMKA
+                </h3>
+
+                <p data-key="demkaText">
+                    Официальный представитель.
+                </p>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     CONTACTS
+========================================= -->
+
+<section id="contacts" class="contacts">
+
+    <h2 data-key="contactsTitle">
+        Контакты
+    </h2>
+
+
+    <p>
+        📍
+        <span data-key="address">
+            Астана, Казахстан
+        </span>
+    </p>
+
+
+    <p>
+        📧
+        aqanholding@gmail.com
+    </p>
+
+
+    <p>
+        📞
+        +7 778 638 59 78
+    </p>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <span data-key="footer">
+        © 2026 AQAN HOLDING. Все права защищены.
+    </span>
+
+</footer>
+
+
+<script>
+
+/* =====================================================
+   ПЕРЕВОДЫ
+===================================================== */
+
+const translations = {
+
+    /* ================================
+       РУССКИЙ
+    ================================= */
+
+    ru: {
+
+        home: "Главная",
+
+        about: "О компании",
+
+        partners: "Партнеры",
+
+        contacts: "Контакты",
+
+        hero1:
+        "Высокое европейское качество промышленного оборудования.",
+
+        hero2:
+        "Официальный партнер международных производителей.",
+
+        more:
+        "Подробнее",
+
+        history:
+        "История AQAN HOLDING",
+
+        historyText:
+`AQAN HOLDING LLP — казахстанская компания, зарегистрированная в городе Астана,
+специализирующаяся на поставке промышленного оборудования, электротехнической
+продукции и комплексных инженерных решений.
+
+Компания сотрудничает с ведущими европейскими производителями промышленного
+оборудования и является официальным партнером нескольких международных брендов.
+
+Основной целью компании является обеспечение предприятий Казахстана и стран
+Евразийского экономического союза современным оборудованием высокого качества,
+соответствующим международным стандартам безопасности.
+
+AQAN HOLDING предоставляет услуги по поставке оборудования, техническому
+сопровождению, монтажу, сервисному обслуживанию и консультационной поддержке.
+
+Компания является официальным представителем европейских производителей и
+обладает эксклюзивными правами на реализацию продукции на территории стран ЕАЭС,
+что подтверждается сертификатами и официальными письмами партнеров.
+
+Благодаря сотрудничеству с компаниями HARDO, Grupa Wolff и DEMKA AQAN HOLDING
+предлагает современные решения для промышленных предприятий, нефтегазовой,
+горнодобывающей, энергетической и строительной отраслей.
+
+Сегодня компания продолжает расширять партнерскую сеть, внедрять новые
+технологии и обеспечивать клиентов надежным европейским оборудованием.`,
+
+        aboutTitle:
+        "О компании",
+
+        aboutText:
+        "AQAN HOLDING занимается поставкой промышленного оборудования, кабельной продукции, монтажом и технической поддержкой.",
+
+        partnersTitle:
+        "Наши партнеры",
+
+        hardoText:
+        "Сертифицированный партнер.",
+
+        wolffText:
+        "Официальный партнер.",
+
+        demkaText:
+        "Официальный представитель.",
+
+        contactsTitle:
+        "Контакты",
+
+        address:
+        "Астана, Казахстан",
+
+        footer:
+        "© 2026 AQAN HOLDING. Все права защищены."
+
+    },
+
+
+    /* ================================
+       ҚАЗАҚША
+    ================================= */
+
+    kk: {
+
+        home:
+        "Басты бет",
+
+        about:
+        "Компания туралы",
+
+        partners:
+        "Серіктестер",
+
+        contacts:
+        "Байланыстар",
+
+        hero1:
+        "Өнеркәсіптік жабдықтардың жоғары еуропалық сапасы.",
+
+        hero2:
+        "Халықаралық өндірушілердің ресми серіктесі.",
+
+        more:
+        "Толығырақ",
+
+        history:
+        "AQAN HOLDING тарихы",
+
+        historyText:
+`AQAN HOLDING LLP — Астана қаласында тіркелген қазақстандық компания.
+Компания өнеркәсіптік жабдықтарды, электротехникалық өнімдерді және кешенді
+инженерлік шешімдерді жеткізуге маманданған.
+
+Компания жетекші еуропалық өнеркәсіптік жабдық өндірушілерімен жұмыс істейді
+және бірнеше халықаралық брендтердің ресми серіктесі болып табылады.
+
+Компанияның негізгі мақсаты — Қазақстан мен Еуразиялық экономикалық одақ
+елдерінің кәсіпорындарын халықаралық қауіпсіздік стандарттарына сәйкес
+келетін жоғары сапалы заманауи жабдықтармен қамтамасыз ету.
+
+AQAN HOLDING жабдықтарды жеткізу, техникалық қолдау, монтаждау, сервистік
+қызмет көрсету және консультациялық қолдау қызметтерін ұсынады.
+
+Компания еуропалық өндірушілердің ресми өкілі болып табылады және ЕАЭО
+аумағында өнімдерді өткізуге эксклюзивті құқықтарға ие.
+
+Бұл құқықтар сертификаттармен және серіктестердің ресми хаттарымен расталады.
+
+HARDO, Grupa Wolff және DEMKA компанияларымен ынтымақтастықтың арқасында
+AQAN HOLDING өнеркәсіптік кәсіпорындарға, мұнай-газ, тау-кен, энергетика
+және құрылыс салаларына заманауи шешімдер ұсынады.
+
+Бүгінде компания серіктестік желісін кеңейтуді, жаңа технологияларды енгізуді
+және клиенттерді сенімді еуропалық жабдықтармен қамтамасыз етуді жалғастыруда.`,
+
+        aboutTitle:
+        "Компания туралы",
+
+        aboutText:
+        "AQAN HOLDING өнеркәсіптік жабдықтарды, кабель өнімдерін жеткізумен, монтаждаумен және техникалық қолдаумен айналысады.",
+
+        partnersTitle:
+        "Біздің серіктестеріміз",
+
+        hardoText:
+        "Сертификатталған серіктес.",
+
+        wolffText:
+        "Ресми серіктес.",
+
+        demkaText:
+        "Ресми өкіл.",
+
+        contactsTitle:
+        "Байланыстар",
+
+        address:
+        "Астана, Қазақстан",
+
+        footer:
+        "© 2026 AQAN HOLDING. Барлық құқықтар қорғалған."
+
+    },
+
+
+    /* ================================
+       ENGLISH
+    ================================= */
+
+    en: {
+
+        home:
+        "Home",
+
+        about:
+        "About the Company",
+
+        partners:
+        "Partners",
+
+        contacts:
+        "Contacts",
+
+        hero1:
+        "High European quality of industrial equipment.",
+
+        hero2:
+        "Official partner of international manufacturers.",
+
+        more:
+        "Learn More",
+
+        history:
+        "History of AQAN HOLDING",
+
+        historyText:
+`AQAN HOLDING LLP is a Kazakhstan-based company registered in Astana.
+The company specializes in the supply of industrial equipment, electrical
+products and comprehensive engineering solutions.
+
+The company cooperates with leading European industrial equipment manufacturers
+and is an official partner of several international brands.
+
+The main goal of the company is to provide enterprises in Kazakhstan and the
+countries of the Eurasian Economic Union with modern, high-quality equipment
+that meets international safety standards.
+
+AQAN HOLDING provides equipment supply, technical support, installation,
+maintenance and consulting services.
+
+The company is an official representative of European manufacturers and has
+exclusive rights to distribute products throughout the EAEU territory.
+
+These rights are confirmed by certificates and official letters from partners.
+
+Through cooperation with HARDO, Grupa Wolff and DEMKA, AQAN HOLDING offers
+modern solutions for industrial enterprises and the oil and gas, mining,
+energy and construction industries.
+
+Today, the company continues to expand its partner network, introduce new
+technologies and provide customers with reliable European equipment.`,
+
+        aboutTitle:
+        "About the Company",
+
+        aboutText:
+        "AQAN HOLDING specializes in the supply of industrial equipment, cable products, installation and technical support.",
+
+        partnersTitle:
+        "Our Partners",
+
+        hardoText:
+        "Certified partner.",
+
+        wolffText:
+        "Official partner.",
+
+        demkaText:
+        "Official representative.",
+
+        contactsTitle:
+        "Contacts",
+
+        address:
+        "Astana, Kazakhstan",
+
+        footer:
+        "© 2026 AQAN HOLDING. All rights reserved."
+
+    }
+
+};
+
+
+/* =====================================================
+   ПЕРЕВОД
+===================================================== */
+
+function changeLanguage(language){
+
+    const selectedLanguage = translations[language];
+
+    if(!selectedLanguage){
+        return;
+    }
+
+
+    /*
+        Находим ВСЕ элементы с data-key
+        и меняем их содержимое.
+    */
+
+    document.querySelectorAll("[data-key]").forEach(function(element){
+
+        const key = element.getAttribute("data-key");
+
+        if(selectedLanguage[key]){
+
+            element.textContent = selectedLanguage[key];
+
+        }
+
+    });
+
+
+    /*
+        Меняем язык HTML
+    */
+
+    document.documentElement.lang = language;
+
+
+    /*
+        Запоминаем выбранный язык
+    */
+
+    localStorage.setItem(
+        "aqanLanguage",
+        language
+    );
+
+
+    /*
+        Подсвечиваем активную кнопку
+    */
+
+    document.querySelectorAll(
+        ".language-switcher button"
+    ).forEach(function(button){
+
+        button.classList.remove("active");
+
+    });
+
+
+    if(language === "ru"){
+
+        document
+            .getElementById("ruButton")
+            .classList.add("active");
+
+    }
+
+    if(language === "kk"){
+
+        document
+            .getElementById("kkButton")
+            .classList.add("active");
+
+    }
+
+    if(language === "en"){
+
+        document
+            .getElementById("enButton")
+            .classList.add("active");
+
+    }
+
+}
+
+
+/* =====================================================
+   КНОПКА «ПОДРОБНЕЕ»
+===================================================== */
+
+function showInfo(){
+
+    const box =
+        document.getElementById("aboutBox");
+
+    box.classList.toggle("show");
+
+}
+
+
+/* =====================================================
+   ЗАГРУЗКА СОХРАНЁННОГО ЯЗЫКА
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const savedLanguage =
+            localStorage.getItem("aqanLanguage") || "ru";
+
+        changeLanguage(savedLanguage);
+
+    }
+);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+header{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#d40000;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d40000;
+}
+
+.hero{
+    width:90%;
+    margin:60px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.text{
+    flex:1;
+}
+
+.text h1{
+    font-size:60px;
+}
+
+.text h1 span{
+    color:#d40000;
+}
+
+.redline{
+    width:120px;
+    height:5px;
+    background:#d40000;
+    margin:20px 0;
+}
+
+.text p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    background:#d40000;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#aa0000;
+}
+
+.image{
+    flex:1;
+}
+
+.image img{
+    width:100%;
+    border-radius:10px;
+}
+
+section{
+    width:90%;
+    margin:70px auto;
+}
+
+h2{
+    color:#d40000;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    flex:1;
+    min-width:250px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+footer{
+    margin-top:60px;
+    background:#1b1b1b;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+}
+
+.text h1{
+    font-size:42px;
+}
+
+nav{
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+}
+
+nav ul{
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:0 10px;
+}
+
+}
+
+.about-box{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    display:none;
+
+    animation:fade .6s;
+}
+
+.about-box h2{
+    color:#d40000;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}.about-box{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    display:none;
+
+    animation:fade .6s;
+}
+
+.about-box h2{
+    color:#d40000;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.card-link{
+    text-decoration:none;
+    color:inherit;
+    flex:1;
+    min-width:250px;
+}
+
+.card-link .card{
+    transition:0.3s;
+}
+
+.card-link:hover .card{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.language{
+    display:flex;
+    gap:5px;
+    margin-left:25px;
+}
+
+.language button{
+    padding:7px 10px;
+    background:white;
+    color:#222;
+    border:1px solid #ddd;
+    border-radius:4px;
+    font-size:13px;
+    cursor:pointer;
+}
+
+.language button:hover{
+    background:#d40000;
+    color:white;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.language-switcher button {
+    padding: 8px 12px;
+    border: 1px solid #d40000;
+    background: white;
+    color: #d40000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.language-switcher button:hover {
+    background: #d40000;
+    color: white;
+}

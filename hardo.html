@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HARDO | AQAN HOLDING</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================================
+   ЯЗЫКИ
+========================================= */
+
+.language-switcher{
+    display:flex;
+    gap:6px;
+    align-items:center;
+}
+
+.language-switcher button{
+    padding:8px 12px;
+
+    background:white;
+    color:#d40000;
+
+    border:1px solid #d40000;
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+    font-size:13px;
+
+    transition:0.2s;
+}
+
+.language-switcher button:hover{
+    background:#d40000;
+    color:white;
+}
+
+.language-switcher button.active{
+    background:#d40000;
+    color:white;
+}
+
+
+/* =========================================
+   ТЕКСТ HARDO
+========================================= */
+
+.company-text{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.company-text p{
+    margin-bottom:25px;
+}
+
+
+/* =========================================
+   АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА
+========================================= */
+
+@media(max-width:800px){
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .language-switcher{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<nav>
+
+    <div class="logo">
+        AQAN <span>HOLDING</span>
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html" data-key="home">
+                Главная
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- ПЕРЕВОДЧИК -->
+
+    <div class="language-switcher">
+
+        <button
+            id="ruButton"
+            onclick="changeLanguage('ru')">
+            RU
+        </button>
+
+        <button
+            id="kkButton"
+            onclick="changeLanguage('kk')">
+            KZ
+        </button>
+
+        <button
+            id="enButton"
+            onclick="changeLanguage('en')">
+            EN
+        </button>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================================
+     HARDO
+========================================= -->
+
+<section>
+
+    <h1
+        style="font-size:55px;"
+        data-key="title">
+
+        HARDO
+
+    </h1>
+
+
+    <div class="redline"></div>
+
+
+    <div class="company-text">
+
+
+        <!-- ПАРАГРАФ 1 -->
+
+        <p data-key="hardo_p1">
+
+            Компания HARDO — европейский производитель промышленного оборудования и
+            электротехнических решений.
+
+        </p>
+
+
+        <!-- ПАРАГРАФ 2 -->
+
+        <p data-key="hardo_p2">
+
+            AQAN HOLDING является единственным сертифицированным партнером HARDO на
+            территории стран Евразийского экономического союза и обладает эксклюзивными
+            правами на реализацию, поставку, установку и сервисное обслуживание продукции
+            HARDO до 1 января 2031 года.
+
+        </p>
+
+
+        <!-- ПАРАГРАФ 3 -->
+
+        <p data-key="hardo_p3">
+
+            Компания предлагает оборудование высокого качества, соответствующее
+            международным требованиям безопасности и промышленным стандартам.
+
+        </p>
+
+
+        <!-- ПАРАГРАФ 4 -->
+
+        <p data-key="hardo_p4">
+
+            На протяжении десятилетий компания развивалась вместе с изменениями в обувной
+            промышленности. HARDO постоянно совершенствовала свои технологии, создавая
+            оборудование, которое позволяло выполнять сложные операции быстрее, точнее и
+            безопаснее. Компания стала производить различные виды машин для обработки
+            обувных материалов, подготовки поверхностей, шлифовки, ремонта и изготовления
+            профессиональной обуви. Благодаря этому оборудование HARDO начало использоваться
+            в обувных мастерских, на производственных предприятиях и в специализированных
+            центрах по всему миру.
+
+        </p>
+
+
+        <!-- ПАРАГРАФ 5 -->
+
+        <p data-key="hardo_p5">
+
+            Одним из главных направлений деятельности HARDO является производство машин
+            для ремонта обуви. Такое оборудование предназначено для профессионального
+            использования и помогает мастерам выполнять большое количество различных
+            операций: обработку подошвы, шлифовку материалов, подготовку поверхностей
+            перед склеиванием, изменение формы деталей и восстановление обувных элементов.
+            Машины HARDO отличаются прочной конструкцией, удобством управления и
+            способностью работать в условиях постоянной нагрузки, что особенно важно для
+            мастерских, где оборудование используется ежедневно.
+
+        </p>
+
+
+        <!-- ПАРАГРАФ 6 -->
+
+        <p data-key="hardo_p6">
+
+            Особое место в деятельности компании занимает оборудование для ортопедической
+            обувной техники. Такие машины используются специалистами, которые создают
+            индивидуальную обувь и корректирующие элементы с учётом особенностей каждого
+            человека. Для этой области требуется высокая точность обработки материалов,
+            поэтому оборудование HARDO создаётся с учётом строгих требований к качеству и
+            надёжности. Благодаря точности механизмов специалисты могут выполнять сложные
+            работы с кожей, синтетическими материалами и другими компонентами обуви.
+
+        </p>
+
+
+        <!-- ПАРАГРАФ 7 -->
+
+        <p data-key="hardo_p7">
+
+            Ещё одним важным направлением компании являются промышленные системы нанесения
+            клея. HARDO разрабатывает оборудование, которое позволяет наносить клеевые
+            материалы равномерным и контролируемым слоем. Это особенно важно в производстве
+            обуви, где качество соединения подошвы и верхней части обуви напрямую зависит
+            от правильного нанесения клея. Такие системы помогают повысить производительность,
+            уменьшить расход материалов и обеспечить стабильное качество готовой продукции.
+
+        </p>
+
+
+    </div>
+
+
+    <br>
+
+
+    <!-- КНОПКА -->
+
+    <button
+        onclick="window.location.href='index.html'"
+        data-key="back">
+
+        ← Вернуться на главную
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <span data-key="footer">
+        © AQAN HOLDING
+    </span>
+
+</footer>
+
+
+
+<!-- =========================================
+     ПЕРЕВОДЧИК
+========================================= -->
+
+<script>
+
+
+/* =====================================================
+   СЛОВАРЬ
+===================================================== */
+
+const translations = {
+
+
+    /* =========================================
+       РУССКИЙ
+    ========================================= */
+
+    ru: {
+
+        title:
+        "HARDO",
+
+        home:
+        "Главная",
+
+        hardo_p1:
+        "Компания HARDO — европейский производитель промышленного оборудования и электротехнических решений.",
+
+        hardo_p2:
+        "AQAN HOLDING является единственным сертифицированным партнером HARDO на территории стран Евразийского экономического союза и обладает эксклюзивными правами на реализацию, поставку, установку и сервисное обслуживание продукции HARDO до 1 января 2031 года.",
+
+        hardo_p3:
+        "Компания предлагает оборудование высокого качества, соответствующее международным требованиям безопасности и промышленным стандартам.",
+
+        hardo_p4:
+        "На протяжении десятилетий компания развивалась вместе с изменениями в обувной промышленности. HARDO постоянно совершенствовала свои технологии, создавая оборудование, которое позволяло выполнять сложные операции быстрее, точнее и безопаснее. Компания стала производить различные виды машин для обработки обувных материалов, подготовки поверхностей, шлифовки, ремонта и изготовления профессиональной обуви. Благодаря этому оборудование HARDO начало использоваться в обувных мастерских, на производственных предприятиях и в специализированных центрах по всему миру.",
+
+        hardo_p5:
+        "Одним из главных направлений деятельности HARDO является производство машин для ремонта обуви. Такое оборудование предназначено для профессионального использования и помогает мастерам выполнять большое количество различных операций: обработку подошвы, шлифовку материалов, подготовку поверхностей перед склеиванием, изменение формы деталей и восстановление обувных элементов. Машины HARDO отличаются прочной конструкцией, удобством управления и способностью работать в условиях постоянной нагрузки, что особенно важно для мастерских, где оборудование используется ежедневно.",
+
+        hardo_p6:
+        "Особое место в деятельности компании занимает оборудование для ортопедической обувной техники. Такие машины используются специалистами, которые создают индивидуальную обувь и корректирующие элементы с учётом особенностей каждого человека. Для этой области требуется высокая точность обработки материалов, поэтому оборудование HARDO создаётся с учётом строгих требований к качеству и надёжности. Благодаря точности механизмов специалисты могут выполнять сложные работы с кожей, синтетическими материалами и другими компонентами обуви.",
+
+        hardo_p7:
+        "Ещё одним важным направлением компании являются промышленные системы нанесения клея. HARDO разрабатывает оборудование, которое позволяет наносить клеевые материалы равномерным и контролируемым слоем. Это особенно важно в производстве обуви, где качество соединения подошвы и верхней части обуви напрямую зависит от правильного нанесения клея. Такие системы помогают повысить производительность, уменьшить расход материалов и обеспечить стабильное качество готовой продукции.",
+
+        back:
+        "← Вернуться на главную",
+
+        footer:
+        "© AQAN HOLDING"
+
+    },
+
+
+    /* =========================================
+       ҚАЗАҚША
+    ========================================= */
+
+    kk: {
+
+        title:
+        "HARDO",
+
+        home:
+        "Басты бет",
+
+        hardo_p1:
+        "HARDO — өнеркәсіптік жабдықтар мен электротехникалық шешімдердің еуропалық өндірушісі.",
+
+        hardo_p2:
+        "AQAN HOLDING Еуразиялық экономикалық одақ елдерінің аумағында HARDO компаниясының жалғыз сертификатталған серіктесі болып табылады және 2031 жылдың 1 қаңтарына дейін HARDO өнімдерін өткізуге, жеткізуге, орнатуға және сервистік қызмет көрсетуге эксклюзивті құқықтарға ие.",
+
+        hardo_p3:
+        "Компания халықаралық қауіпсіздік талаптары мен өнеркәсіптік стандарттарға сәйкес келетін жоғары сапалы жабдықтарды ұсынады.",
+
+        hardo_p4:
+        "Компания бірнеше ондаған жылдар бойы аяқ киім өнеркәсібіндегі өзгерістермен бірге дамып келеді. HARDO технологияларын үнемі жетілдіріп, күрделі операцияларды жылдамырақ, дәлірек және қауіпсіз орындауға мүмкіндік беретін жабдықтар жасады. Компания аяқ киім материалдарын өңдеуге, беттерді дайындауға, тегістеуге, жөндеуге және кәсіби аяқ киім өндіруге арналған әртүрлі машиналар шығара бастады. Соның арқасында HARDO жабдықтары бүкіл әлемдегі аяқ киім шеберханаларында, өндірістік кәсіпорындарда және мамандандырылған орталықтарда қолданыла бастады.",
+
+        hardo_p5:
+        "HARDO қызметінің негізгі бағыттарының бірі — аяқ киімді жөндеуге арналған машиналар өндіру. Мұндай жабдық кәсіби қолдануға арналған және шеберлерге көптеген операцияларды орындауға көмектеседі: табанды өңдеу, материалдарды тегістеу, желімдеу алдында беттерді дайындау, бөлшектердің пішінін өзгерту және аяқ киім элементтерін қалпына келтіру. HARDO машиналары берік конструкциясымен, басқарудың ыңғайлылығымен және тұрақты жүктеме жағдайында жұмыс істеу қабілетімен ерекшеленеді, бұл жабдық күнделікті қолданылатын шеберханалар үшін өте маңызды.",
+
+        hardo_p6:
+        "Компания қызметінде ортопедиялық аяқ киім технологиясына арналған жабдықтар ерекше орын алады. Мұндай машиналарды әр адамның ерекшеліктерін ескере отырып, жеке аяқ киім мен түзетуші элементтер жасайтын мамандар пайдаланады. Бұл сала материалдарды өңдеудің жоғары дәлдігін талап етеді, сондықтан HARDO жабдықтары сапа мен сенімділікке қойылатын қатаң талаптарды ескере отырып жасалады. Механизмдердің дәлдігінің арқасында мамандар былғары, синтетикалық материалдар және аяқ киімнің басқа компоненттерімен күрделі жұмыстарды орындай алады.",
+
+        hardo_p7:
+        "Компанияның тағы бір маңызды бағыты — желім жағуға арналған өнеркәсіптік жүйелер. HARDO желім материалдарын біркелкі және бақыланатын қабатпен жағуға мүмкіндік беретін жабдықтарды әзірлейді. Бұл аяқ киім өндірісінде ерекше маңызды, себебі табан мен аяқ киімнің үстіңгі бөлігінің қосылу сапасы желімді дұрыс жағуға тікелей байланысты. Мұндай жүйелер өнімділікті арттыруға, материал шығынын азайтуға және дайын өнімнің тұрақты сапасын қамтамасыз етуге көмектеседі.",
+
+        back:
+        "← Басты бетке оралу",
+
+        footer:
+        "© AQAN HOLDING"
+
+    },
+
+
+    /* =========================================
+       ENGLISH
+    ========================================= */
+
+    en: {
+
+        title:
+        "HARDO",
+
+        home:
+        "Home",
+
+        hardo_p1:
+        "HARDO is a European manufacturer of industrial equipment and electrical engineering solutions.",
+
+        hardo_p2:
+        "AQAN HOLDING is the sole certified partner of HARDO in the territory of the countries of the Eurasian Economic Union and has exclusive rights for the sale, supply, installation and servicing of HARDO products until January 1, 2031.",
+
+        hardo_p3:
+        "The company offers high-quality equipment that meets international safety requirements and industrial standards.",
+
+        hardo_p4:
+        "For decades, the company has developed alongside changes in the footwear industry. HARDO has continuously improved its technologies, creating equipment that allows complex operations to be performed faster, more accurately and more safely. The company began producing various types of machines for processing footwear materials, surface preparation, grinding, repair and professional footwear manufacturing. As a result, HARDO equipment began to be used in footwear workshops, manufacturing enterprises and specialized centers around the world.",
+
+        hardo_p5:
+        "One of HARDO's main areas of activity is the production of shoe repair machines. This equipment is designed for professional use and helps specialists perform a wide range of operations, including sole processing, material grinding, surface preparation before bonding, reshaping components and restoring footwear elements. HARDO machines are characterized by a durable construction, convenient operation and the ability to work under constant loads, which is especially important for workshops where equipment is used every day.",
+
+        hardo_p6:
+        "A special place in the company's activities is occupied by equipment for orthopedic footwear technology. Such machines are used by specialists who create custom footwear and corrective elements taking into account the individual characteristics of each person. This field requires highly precise material processing, so HARDO equipment is designed according to strict quality and reliability requirements. Thanks to the precision of the mechanisms, specialists can perform complex work with leather, synthetic materials and other footwear components.",
+
+        hardo_p7:
+        "Another important area of the company's activities is industrial adhesive application systems. HARDO develops equipment that allows adhesive materials to be applied in an even and controlled layer. This is particularly important in footwear manufacturing, where the quality of the connection between the sole and the upper part of the shoe directly depends on proper adhesive application. Such systems help increase productivity, reduce material consumption and ensure consistent quality of finished products.",
+
+        back:
+        "← Back to Home",
+
+        footer:
+        "© AQAN HOLDING"
+
+    }
+
+};
+
+
+/* =====================================================
+   СМЕНА ЯЗЫКА
+===================================================== */
+
+function changeLanguage(language){
+
+    const dictionary = translations[language];
+
+    if(!dictionary){
+        return;
+    }
+
+
+    /*
+       Находим каждый элемент,
+       у которого есть data-key
+    */
+
+    document
+        .querySelectorAll("[data-key]")
+        .forEach(function(element){
+
+            const key =
+                element.getAttribute("data-key");
+
+
+            if(dictionary[key]){
+
+                element.textContent =
+                    dictionary[key];
+
+            }
+
+        });
+
+
+    /*
+       Меняем язык страницы
+    */
+
+    document.documentElement.lang =
+        language;
+
+
+    /*
+       Сохраняем язык
+    */
+
+    localStorage.setItem(
+        "aqanLanguage",
+        language
+    );
+
+
+    /*
+       Снимаем активность
+       со всех кнопок
+    */
+
+    document
+        .querySelectorAll(".language-switcher button")
+        .forEach(function(button){
+
+            button.classList.remove("active");
+
+        });
+
+
+    /*
+       Подсвечиваем выбранный язык
+    */
+
+    if(language === "ru"){
+
+        document
+            .getElementById("ruButton")
+            .classList.add("active");
+
+    }
+
+
+    if(language === "kk"){
+
+        document
+            .getElementById("kkButton")
+            .classList.add("active");
+
+    }
+
+
+    if(language === "en"){
+
+        document
+            .getElementById("enButton")
+            .classList.add("active");
+
+    }
+
+}
+
+
+/* =====================================================
+   ЗАГРУЗКА СОХРАНЁННОГО ЯЗЫКА
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const savedLanguage =
+            localStorage.getItem("aqanLanguage") || "ru";
+
+
+        changeLanguage(
+            savedLanguage
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

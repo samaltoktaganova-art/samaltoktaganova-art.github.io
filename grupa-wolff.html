@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grupa Wolff | AQAN HOLDING</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================================
+   ПЕРЕВОДЧИК
+========================================= */
+
+.language-switcher{
+    display:flex;
+    gap:6px;
+    align-items:center;
+}
+
+.language-switcher button{
+    padding:8px 12px;
+
+    background:white;
+    color:#d40000;
+
+    border:1px solid #d40000;
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+    font-size:13px;
+
+    transition:0.2s;
+}
+
+.language-switcher button:hover{
+    background:#d40000;
+    color:white;
+}
+
+.language-switcher button.active{
+    background:#d40000;
+    color:white;
+}
+
+
+/* =========================================
+   ТЕКСТ
+========================================= */
+
+.company-text{
+    font-size:20px;
+    line-height:1.9;
+}
+
+.company-text p{
+    margin-bottom:25px;
+}
+
+
+/* =========================================
+   ТЕЛЕФОН
+========================================= */
+
+@media(max-width:800px){
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .language-switcher{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<nav>
+
+    <div class="logo">
+        AQAN <span>HOLDING</span>
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a
+                href="index.html"
+                data-key="home">
+
+                Главная
+
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- ПЕРЕВОДЧИК -->
+
+    <div class="language-switcher">
+
+        <button
+            id="ruButton"
+            onclick="changeLanguage('ru')">
+
+            RU
+
+        </button>
+
+
+        <button
+            id="kkButton"
+            onclick="changeLanguage('kk')">
+
+            KZ
+
+        </button>
+
+
+        <button
+            id="enButton"
+            onclick="changeLanguage('en')">
+
+            EN
+
+        </button>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================================
+     GRUPA WOLFF
+========================================= -->
+
+<section>
+
+
+    <h1
+        style="font-size:55px;"
+        data-key="title">
+
+        Grupa Wolff
+
+    </h1>
+
+
+    <div class="redline"></div>
+
+
+    <div class="company-text">
+
+
+        <!-- 1 -->
+
+        <p data-key="p1">
+
+            Grupa Wolff — международная компания, занимающаяся разработкой,
+            поставкой и обслуживанием промышленного оборудования и инженерных решений.
+
+        </p>
+
+
+        <!-- 2 -->
+
+        <p data-key="p2">
+
+            Компания работает в области промышленной безопасности, защиты предприятий,
+            технологических систем и комплексного оснащения производственных объектов.
+
+        </p>
+
+
+        <!-- 3 -->
+
+        <p data-key="p3">
+
+            AQAN HOLDING является официальным партнером группы компаний Grupa Wolff
+            на территории стран Евразийского экономического союза, включая Республику
+            Казахстан, Армению и Кыргызстан.
+
+        </p>
+
+
+        <!-- 4 -->
+
+        <p data-key="p4">
+
+            Компания AQAN HOLDING обладает эксклюзивными правами на реализацию,
+            поставку, установку, сервисное обслуживание и ремонт оборудования и материалов,
+            произведённых Grupa Wolff.
+
+        </p>
+
+
+        <!-- 5 -->
+
+        <p data-key="p5">
+
+            Благодаря сотрудничеству двух компаний клиенты получают доступ к современным
+            европейским технологиям, профессиональному монтажу и технической поддержке.
+
+        </p>
+
+
+        <!-- 6 -->
+
+        <p data-key="p6">
+
+            Партнерство между Grupa Wolff и AQAN HOLDING позволяет обеспечивать
+            предприятия качественными промышленными решениями и повышать уровень
+            безопасности производственных процессов.
+
+        </p>
+
+
+        <!-- 7 -->
+
+        <p data-key="p7">
+
+            История Grupa WOLFF начинается в 1994 году, когда инженер Анджей Вольфф
+            открыл инженерное бюро Tessa Engineering Office в Кракове. В первые годы
+            компания основывалась прежде всего на инженерных знаниях и разработке
+            технических решений для промышленности. Благодаря опыту специалистов и
+            вниманию к сложным промышленным задачам компания постепенно расширяла
+            свою деятельность и стала превращаться из небольшого инженерного бюро
+            в крупную организацию, занимающуюся промышленной безопасностью и технологиями.
+
+        </p>
+
+
+        <!-- 8 -->
+
+        <p data-key="p8">
+
+            Одним из главных направлений деятельности Grupa WOLFF стала защита
+            промышленных объектов от взрывов. На многих предприятиях, где используются
+            горючие пыли, газы или химические вещества, существует риск возникновения
+            опасных ситуаций. Компания занимается анализом таких угроз, проектированием
+            защитных систем и внедрением решений, которые помогают снизить вероятность
+            аварий. Особое внимание уделяется требованиям ATEX — европейским стандартам,
+            связанным с оборудованием и зонами, где могут возникать взрывоопасные среды.
+
+        </p>
+
+
+        <!-- 9 -->
+
+        <p data-key="p9">
+
+            Grupa WOLFF работает по принципу комплексного подрядчика: специалисты
+            компании могут выполнить полный цикл проекта — начиная от анализа проблемы
+            и проектирования, заканчивая поставкой оборудования, монтажом и дальнейшим
+            обслуживанием. Такой подход позволяет предприятиям получать готовые решения
+            без необходимости привлекать множество разных организаций.
+
+        </p>
+
+
+        <!-- 10 -->
+
+        <p data-key="p10">
+
+            Одним из ключевых направлений компании является промышленная противопожарная
+            защита. Grupa WOLFF проектирует и внедряет системы, предназначенные для защиты
+            производственных объектов, складов и технологических линий. Компания занимается
+            созданием решений, которые помогают контролировать опасные процессы, предотвращать
+            распространение пожаров и повышать общий уровень безопасности предприятий.
+
+        </p>
+
+
+        <!-- 11 -->
+
+        <p data-key="p11">
+
+            Кроме систем безопасности, компания занимается поставкой и разработкой
+            промышленного оборудования. В её деятельности присутствуют технологические
+            установки, оборудование для обработки материалов, системы транспортировки,
+            устройства для работы с порошковыми и сыпучими веществами, а также различные
+            инженерные конструкции. Такие решения используются на заводах, где требуется
+            высокая точность, надёжность и соответствие промышленным стандартам.
+
+        </p>
+
+
+    </div>
+
+
+    <br>
+
+
+    <!-- КНОПКА -->
+
+    <button
+        onclick="window.location.href='index.html'"
+        data-key="back">
+
+        ← Вернуться
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <span data-key="footer">
+
+        © AQAN HOLDING
+
+    </span>
+
+</footer>
+
+
+
+<script>
+
+/* =====================================================
+   ПЕРЕВОДЫ
+===================================================== */
+
+const translations = {
+
+
+    /* =========================================
+       РУССКИЙ
+    ========================================= */
+
+    ru: {
+
+        title:
+        "Grupa Wolff",
+
+        home:
+        "Главная",
+
+        p1:
+        "Grupa Wolff — международная компания, занимающаяся разработкой, поставкой и обслуживанием промышленного оборудования и инженерных решений.",
+
+        p2:
+        "Компания работает в области промышленной безопасности, защиты предприятий, технологических систем и комплексного оснащения производственных объектов.",
+
+        p3:
+        "AQAN HOLDING является официальным партнером группы компаний Grupa Wolff на территории стран Евразийского экономического союза, включая Республику Казахстан, Армению и Кыргызстан.",
+
+        p4:
+        "Компания AQAN HOLDING обладает эксклюзивными правами на реализацию, поставку, установку, сервисное обслуживание и ремонт оборудования и материалов, произведённых Grupa Wolff.",
+
+        p5:
+        "Благодаря сотрудничеству двух компаний клиенты получают доступ к современным европейским технологиям, профессиональному монтажу и технической поддержке.",
+
+        p6:
+        "Партнерство между Grupa Wolff и AQAN HOLDING позволяет обеспечивать предприятия качественными промышленными решениями и повышать уровень безопасности производственных процессов.",
+
+        p7:
+        "История Grupa WOLFF начинается в 1994 году, когда инженер Анджей Вольфф открыл инженерное бюро Tessa Engineering Office в Кракове. В первые годы компания основывалась прежде всего на инженерных знаниях и разработке технических решений для промышленности. Благодаря опыту специалистов и вниманию к сложным промышленным задачам компания постепенно расширяла свою деятельность и стала превращаться из небольшого инженерного бюро в крупную организацию, занимающуюся промышленной безопасностью и технологиями.",
+
+        p8:
+        "Одним из главных направлений деятельности Grupa WOLFF стала защита промышленных объектов от взрывов. На многих предприятиях, где используются горючие пыли, газы или химические вещества, существует риск возникновения опасных ситуаций. Компания занимается анализом таких угроз, проектированием защитных систем и внедрением решений, которые помогают снизить вероятность аварий. Особое внимание уделяется требованиям ATEX — европейским стандартам, связанным с оборудованием и зонами, где могут возникать взрывоопасные среды.",
+
+        p9:
+        "Grupa WOLFF работает по принципу комплексного подрядчика: специалисты компании могут выполнить полный цикл проекта — начиная от анализа проблемы и проектирования, заканчивая поставкой оборудования, монтажом и дальнейшим обслуживанием. Такой подход позволяет предприятиям получать готовые решения без необходимости привлекать множество разных организаций.",
+
+        p10:
+        "Одним из ключевых направлений компании является промышленная противопожарная защита. Grupa WOLFF проектирует и внедряет системы, предназначенные для защиты производственных объектов, складов и технологических линий. Компания занимается созданием решений, которые помогают контролировать опасные процессы, предотвращать распространение пожаров и повышать общий уровень безопасности предприятий.",
+
+        p11:
+        "Кроме систем безопасности, компания занимается поставкой и разработкой промышленного оборудования. В её деятельности присутствуют технологические установки, оборудование для обработки материалов, системы транспортировки, устройства для работы с порошковыми и сыпучими веществами, а также различные инженерные конструкции. Такие решения используются на заводах, где требуется высокая точность, надёжность и соответствие промышленным стандартам.",
+
+        back:
+        "← Вернуться",
+
+        footer:
+        "© AQAN HOLDING"
+
+    },
+
+
+    /* =========================================
+       ҚАЗАҚША
+    ========================================= */
+
+    kk: {
+
+        title:
+        "Grupa Wolff",
+
+        home:
+        "Басты бет",
+
+        p1:
+        "Grupa Wolff — өнеркәсіптік жабдықтар мен инженерлік шешімдерді әзірлеумен, жеткізумен және қызмет көрсетумен айналысатын халықаралық компания.",
+
+        p2:
+        "Компания өнеркәсіптік қауіпсіздік, кәсіпорындарды қорғау, технологиялық жүйелер және өндірістік нысандарды кешенді жабдықтау салаларында жұмыс істейді.",
+
+        p3:
+        "AQAN HOLDING Қазақстан Республикасы, Армения және Қырғызстанды қоса алғанда, Еуразиялық экономикалық одақ елдерінің аумағында Grupa Wolff компаниялар тобының ресми серіктесі болып табылады.",
+
+        p4:
+        "AQAN HOLDING Grupa Wolff өндірген жабдықтар мен материалдарды өткізуге, жеткізуге, орнатуға, сервистік қызмет көрсетуге және жөндеуге эксклюзивті құқықтарға ие.",
+
+        p5:
+        "Екі компанияның ынтымақтастығының арқасында клиенттер заманауи еуропалық технологияларға, кәсіби монтажға және техникалық қолдауға қол жеткізе алады.",
+
+        p6:
+        "Grupa Wolff пен AQAN HOLDING арасындағы серіктестік кәсіпорындарды сапалы өнеркәсіптік шешімдермен қамтамасыз етуге және өндірістік процестердің қауіпсіздік деңгейін арттыруға мүмкіндік береді.",
+
+        p7:
+        "Grupa WOLFF тарихы 1994 жылы инженер Анджей Вольфф Краков қаласында Tessa Engineering Office инженерлік бюросын ашқан кезден басталады. Алғашқы жылдары компания негізінен инженерлік білімге және өнеркәсіпке арналған техникалық шешімдерді әзірлеуге сүйенді. Мамандардың тәжірибесі мен күрделі өнеркәсіптік міндеттерге назар аударудың арқасында компания қызметін біртіндеп кеңейтіп, шағын инженерлік бюродан өнеркәсіптік қауіпсіздік пен технологиялармен айналысатын ірі ұйымға айналды.",
+
+        p8:
+        "Grupa WOLFF қызметінің негізгі бағыттарының бірі өнеркәсіптік нысандарды жарылыстардан қорғау болды. Жанғыш шаңдар, газдар немесе химиялық заттар қолданылатын көптеген кәсіпорындарда қауіпті жағдайлардың туындау қаупі бар. Компания мұндай қауіптерді талдаумен, қорғаныс жүйелерін жобалаумен және апаттардың ықтималдығын азайтуға көмектесетін шешімдерді енгізумен айналысады. Жарылыс қаупі бар орталар пайда болуы мүмкін жабдықтар мен аймақтарға қатысты еуропалық стандарттар — ATEX талаптарына ерекше назар аударылады.",
+
+        p9:
+        "Grupa WOLFF кешенді мердігер қағидаты бойынша жұмыс істейді: компания мамандары жобаның толық циклін — мәселені талдау мен жобалаудан бастап жабдықты жеткізуге, монтаждауға және кейінгі қызмет көрсетуге дейін орындай алады. Мұндай тәсіл кәсіпорындарға көптеген түрлі ұйымдарды тартпай-ақ дайын шешімдер алуға мүмкіндік береді.",
+
+        p10:
+        "Компанияның негізгі бағыттарының бірі — өнеркәсіптік өрттен қорғау. Grupa WOLFF өндірістік нысандарды, қоймаларды және технологиялық желілерді қорғауға арналған жүйелерді жобалап, енгізеді. Компания қауіпті процестерді бақылауға, өрттің таралуын болдырмауға және кәсіпорындардың жалпы қауіпсіздік деңгейін арттыруға көмектесетін шешімдерді әзірлейді.",
+
+        p11:
+        "Қауіпсіздік жүйелерінен басқа, компания өнеркәсіптік жабдықтарды жеткізумен және әзірлеумен айналысады. Оның қызметінде технологиялық қондырғылар, материалдарды өңдеуге арналған жабдықтар, тасымалдау жүйелері, ұнтақ және сусымалы заттармен жұмыс істеуге арналған құрылғылар, сондай-ақ әртүрлі инженерлік конструкциялар бар. Мұндай шешімдер жоғары дәлдікті, сенімділікті және өнеркәсіптік стандарттарға сәйкестікті талап ететін зауыттарда қолданылады.",
+
+        back:
+        "← Артқа",
+
+        footer:
+        "© AQAN HOLDING"
+
+    },
+
+
+    /* =========================================
+       ENGLISH
+    ========================================= */
+
+    en: {
+
+        title:
+        "Grupa Wolff",
+
+        home:
+        "Home",
+
+        p1:
+        "Grupa Wolff is an international company engaged in the development, supply and maintenance of industrial equipment and engineering solutions.",
+
+        p2:
+        "The company operates in the fields of industrial safety, enterprise protection, technological systems and comprehensive equipment for industrial facilities.",
+
+        p3:
+        "AQAN HOLDING is an official partner of the Grupa Wolff group of companies in the territory of the countries of the Eurasian Economic Union, including the Republic of Kazakhstan, Armenia and Kyrgyzstan.",
+
+        p4:
+        "AQAN HOLDING has exclusive rights to sell, supply, install, service and repair equipment and materials manufactured by Grupa Wolff.",
+
+        p5:
+        "Through the cooperation of the two companies, customers gain access to modern European technologies, professional installation and technical support.",
+
+        p6:
+        "The partnership between Grupa Wolff and AQAN HOLDING makes it possible to provide enterprises with high-quality industrial solutions and improve the level of safety of production processes.",
+
+        p7:
+        "The history of Grupa WOLFF began in 1994, when engineer Andrzej Wolff opened the Tessa Engineering Office in Krakow. In its early years, the company was primarily based on engineering expertise and the development of technical solutions for industry. Thanks to the experience of its specialists and its focus on complex industrial challenges, the company gradually expanded its activities and developed from a small engineering office into a large organization specializing in industrial safety and technologies.",
+
+        p8:
+        "One of the main areas of Grupa WOLFF's activity became the protection of industrial facilities against explosions. Many enterprises that use combustible dusts, gases or chemical substances face the risk of dangerous situations. The company analyzes such threats, designs protection systems and implements solutions that help reduce the likelihood of accidents. Particular attention is paid to ATEX requirements — European standards related to equipment and areas where explosive atmospheres may occur.",
+
+        p9:
+        "Grupa WOLFF operates as a comprehensive contractor: its specialists can carry out the full project cycle — from problem analysis and design to equipment supply, installation and further maintenance. This approach allows enterprises to receive complete solutions without having to involve many different organizations.",
+
+        p10:
+        "One of the company's key areas is industrial fire protection. Grupa WOLFF designs and implements systems intended to protect industrial facilities, warehouses and production lines. The company develops solutions that help control hazardous processes, prevent the spread of fires and increase the overall level of enterprise safety.",
+
+        p11:
+        "In addition to safety systems, the company supplies and develops industrial equipment. Its activities include technological installations, material processing equipment, transportation systems, devices for handling powders and bulk materials, as well as various engineering structures. Such solutions are used in factories where high precision, reliability and compliance with industrial standards are required.",
+
+        back:
+        "← Back",
+
+        footer:
+        "© AQAN HOLDING"
+
+    }
+
+};
+
+
+/* =====================================================
+   СМЕНА ЯЗЫКА
+===================================================== */
+
+function changeLanguage(language){
+
+    const dictionary =
+        translations[language];
+
+
+    if(!dictionary){
+        return;
+    }
+
+
+    /*
+       Меняем весь текст,
+       отмеченный data-key
+    */
+
+    document
+        .querySelectorAll("[data-key]")
+        .forEach(function(element){
+
+            const key =
+                element.getAttribute("data-key");
+
+
+            if(dictionary[key]){
+
+                element.textContent =
+                    dictionary[key];
+
+            }
+
+        });
+
+
+    /*
+       Язык HTML
+    */
+
+    document.documentElement.lang =
+        language;
+
+
+    /*
+       Сохраняем язык
+    */
+
+    localStorage.setItem(
+        "aqanLanguage",
+        language
+    );
+
+
+    /*
+       Убираем active
+    */
+
+    document
+        .querySelectorAll(
+            ".language-switcher button"
+        )
+        .forEach(function(button){
+
+            button.classList.remove("active");
+
+        });
+
+
+    /*
+       Подсвечиваем выбранный язык
+    */
+
+    if(language === "ru"){
+
+        document
+            .getElementById("ruButton")
+            .classList.add("active");
+
+    }
+
+
+    if(language === "kk"){
+
+        document
+            .getElementById("kkButton")
+            .classList.add("active");
+
+    }
+
+
+    if(language === "en"){
+
+        document
+            .getElementById("enButton")
+            .classList.add("active");
+
+    }
+
+}
+
+
+/* =====================================================
+   ВОССТАНОВЛЕНИЕ ЯЗЫКА
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const savedLanguage =
+            localStorage.getItem("aqanLanguage")
+            || "ru";
+
+
+        changeLanguage(
+            savedLanguage
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

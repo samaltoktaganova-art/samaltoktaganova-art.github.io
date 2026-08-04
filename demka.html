@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DEMKA | AQAN HOLDING</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================================
+   ПЕРЕВОДЧИК
+========================================= */
+
+.language-switcher{
+    display:flex;
+    gap:6px;
+    align-items:center;
+}
+
+.language-switcher button{
+    padding:8px 12px;
+
+    background:white;
+    color:#d40000;
+
+    border:1px solid #d40000;
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+    font-size:13px;
+
+    transition:0.2s;
+}
+
+.language-switcher button:hover{
+    background:#d40000;
+    color:white;
+}
+
+.language-switcher button.active{
+    background:#d40000;
+    color:white;
+}
+
+
+/* =========================================
+   ТЕКСТ DEMKA
+========================================= */
+
+.company-text{
+    font-size:20px;
+    line-height:1.9;
+}
+
+.company-text p{
+    margin-bottom:25px;
+}
+
+
+/* =========================================
+   ТЕЛЕФОН
+========================================= */
+
+@media(max-width:800px){
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .language-switcher{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<nav>
+
+    <div class="logo">
+        AQAN <span>HOLDING</span>
+    </div>
+
+
+    <ul>
+
+        <li>
+
+            <a
+                href="index.html"
+                data-key="home">
+
+                Главная
+
+            </a>
+
+        </li>
+
+    </ul>
+
+
+    <!-- ПЕРЕВОДЧИК -->
+
+    <div class="language-switcher">
+
+        <button
+            id="ruButton"
+            onclick="changeLanguage('ru')">
+
+            RU
+
+        </button>
+
+
+        <button
+            id="kkButton"
+            onclick="changeLanguage('kk')">
+
+            KZ
+
+        </button>
+
+
+        <button
+            id="enButton"
+            onclick="changeLanguage('en')">
+
+            EN
+
+        </button>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================================
+     DEMKA
+========================================= -->
+
+<section>
+
+
+    <h1
+        style="font-size:55px;"
+        data-key="title">
+
+        DEMKA
+
+    </h1>
+
+
+    <div class="redline"></div>
+
+
+    <div class="company-text">
+
+
+        <!-- 1 -->
+
+        <p data-key="p1">
+
+            DEMKA DIS TICARET VE PAZARLAMA A.S. — международная компания,
+            занимающаяся производством и экспортом электротехнической продукции.
+
+        </p>
+
+
+        <!-- 2 -->
+
+        <p data-key="p2">
+
+            Компания специализируется на производстве силовых кабелей низкого и среднего
+            напряжения, контрольных кабелей, сигнальных кабелей и другой кабельной продукции.
+
+        </p>
+
+
+        <!-- 3 -->
+
+        <p data-key="p3">
+
+            AQAN HOLDING является официальным представителем DEMKA в Казахстане.
+
+        </p>
+
+
+        <!-- 4 -->
+
+        <p data-key="p4">
+
+            Компания имеет право представлять продукцию DEMKA, включая различные виды
+            кабелей с изоляцией PVC, XLPE, Rubber (EPR) и LSZH.
+
+        </p>
+
+
+        <!-- 5 -->
+
+        <p data-key="p5">
+
+            Сотрудничество AQAN HOLDING и DEMKA позволяет поставлять клиентам
+            качественную электротехническую продукцию для промышленных предприятий,
+            строительства, энергетики и инфраструктурных проектов.
+
+        </p>
+
+
+        <!-- 6 -->
+
+        <p data-key="p6">
+
+            Главная цель партнерства — обеспечить рынок Казахстана надежными решениями
+            европейского качества и профессиональным сопровождением.
+
+        </p>
+
+
+        <!-- 7 -->
+
+        <p data-key="p7">
+
+            История компании начинается в 1993 году, когда DEMKA появилась как частное
+            предприятие, ориентированное на рынок электрических материалов. С первых лет
+            работы компания стремилась создать систему, в которой качество продукции,
+            техническая поддержка и скорость поставок были главными преимуществами.
+            Постепенно DEMKA расширяла свои связи с производителями и заказчиками,
+            увеличивая своё присутствие на международных рынках.
+
+        </p>
+
+
+        <!-- 8 -->
+
+        <p data-key="p8">
+
+            Основным направлением деятельности DEMKA является поставка электротехнической
+            продукции для промышленных предприятий, строительных компаний и различных
+            организаций, которым требуется надёжное оборудование для электрических систем.
+            Компания работает с большим количеством категорий товаров, связанных с
+            электроснабжением, промышленной автоматикой и технической инфраструктурой.
+
+        </p>
+
+
+        <!-- 9 -->
+
+        <p data-key="p9">
+
+            Главная особенность DEMKA — концепция «All in one at single source», что означает
+            «всё в одном месте из одного источника». Компания стремится сделать процесс
+            закупки проще: вместо того чтобы искать десятки разных поставщиков, клиент может
+            получить широкий спектр необходимых материалов через одного партнёра. Такой
+            подход помогает экономить время, уменьшать сложность управления поставками и
+            повышать эффективность работы предприятий.
+
+        </p>
+
+
+        <!-- 10 -->
+
+        <p data-key="p10">
+
+            DEMKA уделяет большое внимание качеству продукции и техническому соответствию
+            оборудования требованиям промышленности. Компания работает с технически
+            подготовленными специалистами, которые помогают клиентам подобрать подходящие
+            материалы, разобраться в характеристиках оборудования и найти решения под
+            конкретные задачи. Благодаря этому DEMKA выступает не только как продавец,
+            но и как технический партнёр для предприятий.
+
+        </p>
+
+
+    </div>
+
+
+    <br>
+
+
+    <!-- КНОПКА НАЗАД -->
+
+    <button
+        onclick="window.location.href='index.html'"
+        data-key="back">
+
+        ← Вернуться
+
+    </button>
+
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <span data-key="footer">
+
+        © AQAN HOLDING
+
+    </span>
+
+</footer>
+
+
+
+<script>
+
+/* =====================================================
+   СЛОВАРЬ ПЕРЕВОДОВ
+===================================================== */
+
+const translations = {
+
+
+    /* =========================================
+       РУССКИЙ
+    ========================================= */
+
+    ru: {
+
+        title:
+        "DEMKA",
+
+        home:
+        "Главная",
+
+        p1:
+        "DEMKA DIS TICARET VE PAZARLAMA A.S. — международная компания, занимающаяся производством и экспортом электротехнической продукции.",
+
+        p2:
+        "Компания специализируется на производстве силовых кабелей низкого и среднего напряжения, контрольных кабелей, сигнальных кабелей и другой кабельной продукции.",
+
+        p3:
+        "AQAN HOLDING является официальным представителем DEMKA в Казахстане.",
+
+        p4:
+        "Компания имеет право представлять продукцию DEMKA, включая различные виды кабелей с изоляцией PVC, XLPE, Rubber (EPR) и LSZH.",
+
+        p5:
+        "Сотрудничество AQAN HOLDING и DEMKA позволяет поставлять клиентам качественную электротехническую продукцию для промышленных предприятий, строительства, энергетики и инфраструктурных проектов.",
+
+        p6:
+        "Главная цель партнерства — обеспечить рынок Казахстана надежными решениями европейского качества и профессиональным сопровождением.",
+
+        p7:
+        "История компании начинается в 1993 году, когда DEMKA появилась как частное предприятие, ориентированное на рынок электрических материалов. С первых лет работы компания стремилась создать систему, в которой качество продукции, техническая поддержка и скорость поставок были главными преимуществами. Постепенно DEMKA расширяла свои связи с производителями и заказчиками, увеличивая своё присутствие на международных рынках.",
+
+        p8:
+        "Основным направлением деятельности DEMKA является поставка электротехнической продукции для промышленных предприятий, строительных компаний и различных организаций, которым требуется надёжное оборудование для электрических систем. Компания работает с большим количеством категорий товаров, связанных с электроснабжением, промышленной автоматикой и технической инфраструктурой.",
+
+        p9:
+        "Главная особенность DEMKA — концепция «All in one at single source», что означает «всё в одном месте из одного источника». Компания стремится сделать процесс закупки проще: вместо того чтобы искать десятки разных поставщиков, клиент может получить широкий спектр необходимых материалов через одного партнёра. Такой подход помогает экономить время, уменьшать сложность управления поставками и повышать эффективность работы предприятий.",
+
+        p10:
+        "DEMKA уделяет большое внимание качеству продукции и техническому соответствию оборудования требованиям промышленности. Компания работает с технически подготовленными специалистами, которые помогают клиентам подобрать подходящие материалы, разобраться в характеристиках оборудования и найти решения под конкретные задачи. Благодаря этому DEMKA выступает не только как продавец, но и как технический партнёр для предприятий.",
+
+        back:
+        "← Вернуться",
+
+        footer:
+        "© AQAN HOLDING"
+
+    },
+
+
+    /* =========================================
+       ҚАЗАҚША
+    ========================================= */
+
+    kk: {
+
+        title:
+        "DEMKA",
+
+        home:
+        "Басты бет",
+
+        p1:
+        "DEMKA DIS TICARET VE PAZARLAMA A.S. — электротехникалық өнімдерді өндірумен және экспорттаумен айналысатын халықаралық компания.",
+
+        p2:
+        "Компания төмен және орта кернеулі күштік кабельдер, бақылау кабельдері, сигналдық кабельдер және басқа да кабельдік өнімдерді өндіруге маманданған.",
+
+        p3:
+        "AQAN HOLDING Қазақстандағы DEMKA компаниясының ресми өкілі болып табылады.",
+
+        p4:
+        "Компания DEMKA өнімдерін, соның ішінде PVC, XLPE, Rubber (EPR) және LSZH оқшаулауы бар әртүрлі кабель түрлерін ұсынуға құқылы.",
+
+        p5:
+        "AQAN HOLDING пен DEMKA арасындағы ынтымақтастық клиенттерге өнеркәсіптік кәсіпорындар, құрылыс, энергетика және инфрақұрылымдық жобалар үшін сапалы электротехникалық өнімдерді жеткізуге мүмкіндік береді.",
+
+        p6:
+        "Серіктестіктің басты мақсаты — Қазақстан нарығын еуропалық сападағы сенімді шешімдермен және кәсіби сүйемелдеумен қамтамасыз ету.",
+
+        p7:
+        "Компанияның тарихы 1993 жылы DEMKA электр материалдары нарығына бағытталған жеке кәсіпорын ретінде құрылған кезден басталады. Жұмыстың алғашқы жылдарынан бастап компания өнім сапасы, техникалық қолдау және жеткізу жылдамдығы негізгі артықшылықтар болатын жүйе құруға ұмтылды. Біртіндеп DEMKA өндірушілермен және тапсырыс берушілермен байланыстарын кеңейтіп, халықаралық нарықтардағы қатысуын арттырды.",
+
+        p8:
+        "DEMKA қызметінің негізгі бағыты — өнеркәсіптік кәсіпорындарға, құрылыс компанияларына және электр жүйелері үшін сенімді жабдық қажет ететін түрлі ұйымдарға электротехникалық өнімдерді жеткізу. Компания электрмен жабдықтау, өнеркәсіптік автоматтандыру және техникалық инфрақұрылымға байланысты көптеген тауар санаттарымен жұмыс істейді.",
+
+        p9:
+        "DEMKA компаниясының басты ерекшелігі — «All in one at single source» тұжырымдамасы, яғни «бәрі бір жерде, бір көзден» дегенді білдіреді. Компания сатып алу процесін жеңілдетуге тырысады: ондаған түрлі жеткізушілерді іздеудің орнына, клиент қажетті материалдардың кең спектрін бір серіктес арқылы ала алады. Мұндай тәсіл уақытты үнемдеуге, жеткізуді басқарудың күрделілігін азайтуға және кәсіпорындардың жұмыс тиімділігін арттыруға көмектеседі.",
+
+        p10:
+        "DEMKA өнім сапасына және жабдықтардың өнеркәсіп талаптарына техникалық сәйкестігіне үлкен көңіл бөледі. Компания клиенттерге сәйкес материалдарды таңдауға, жабдық сипаттамаларын түсінуге және нақты міндеттерге арналған шешімдерді табуға көмектесетін техникалық дайындықтан өткен мамандармен жұмыс істейді. Осылайша DEMKA тек сатушы ғана емес, сонымен қатар кәсіпорындар үшін техникалық серіктес ретінде қызмет етеді.",
+
+        back:
+        "← Артқа",
+
+        footer:
+        "© AQAN HOLDING"
+
+    },
+
+
+    /* =========================================
+       ENGLISH
+    ========================================= */
+
+    en: {
+
+        title:
+        "DEMKA",
+
+        home:
+        "Home",
+
+        p1:
+        "DEMKA DIS TICARET VE PAZARLAMA A.S. is an international company engaged in the production and export of electrical engineering products.",
+
+        p2:
+        "The company specializes in the production of low- and medium-voltage power cables, control cables, signal cables and other cable products.",
+
+        p3:
+        "AQAN HOLDING is the official representative of DEMKA in Kazakhstan.",
+
+        p4:
+        "The company is authorized to represent DEMKA products, including various types of cables with PVC, XLPE, Rubber (EPR) and LSZH insulation.",
+
+        p5:
+        "The cooperation between AQAN HOLDING and DEMKA makes it possible to supply customers with high-quality electrical engineering products for industrial enterprises, construction, energy and infrastructure projects.",
+
+        p6:
+        "The main goal of the partnership is to provide the Kazakhstan market with reliable European-quality solutions and professional support.",
+
+        p7:
+        "The company's history began in 1993, when DEMKA was established as a private enterprise focused on the electrical materials market. From the first years of operation, the company sought to create a system in which product quality, technical support and delivery speed were the main advantages. Gradually, DEMKA expanded its relationships with manufacturers and customers, increasing its presence in international markets.",
+
+        p8:
+        "The main area of DEMKA's activity is the supply of electrical engineering products for industrial enterprises, construction companies and various organizations that require reliable equipment for electrical systems. The company works with a wide range of product categories related to power supply, industrial automation and technical infrastructure.",
+
+        p9:
+        "A key feature of DEMKA is the concept of «All in one at single source», which means «everything in one place from a single source». The company aims to simplify the purchasing process: instead of searching for dozens of different suppliers, customers can obtain a wide range of necessary materials through one partner. This approach helps save time, reduce the complexity of supply management and improve the efficiency of enterprises.",
+
+        p10:
+        "DEMKA pays great attention to product quality and the technical compliance of equipment with industrial requirements. The company works with technically trained specialists who help customers select suitable materials, understand equipment specifications and find solutions for specific tasks. As a result, DEMKA acts not only as a seller but also as a technical partner for enterprises.",
+
+        back:
+        "← Back",
+
+        footer:
+        "© AQAN HOLDING"
+
+    }
+
+};
+
+
+/* =====================================================
+   ФУНКЦИЯ ПЕРЕВОДА
+===================================================== */
+
+function changeLanguage(language){
+
+    const dictionary =
+        translations[language];
+
+
+    if(!dictionary){
+        return;
+    }
+
+
+    /*
+       Находим все элементы
+       с data-key
+    */
+
+    document
+        .querySelectorAll("[data-key]")
+        .forEach(function(element){
+
+            const key =
+                element.getAttribute("data-key");
+
+
+            if(dictionary[key]){
+
+                element.textContent =
+                    dictionary[key];
+
+            }
+
+        });
+
+
+    /*
+       Меняем язык HTML
+    */
+
+    document.documentElement.lang =
+        language;
+
+
+    /*
+       Сохраняем выбранный язык
+    */
+
+    localStorage.setItem(
+        "aqanLanguage",
+        language
+    );
+
+
+    /*
+       Убираем active
+       со всех кнопок
+    */
+
+    document
+        .querySelectorAll(
+            ".language-switcher button"
+        )
+        .forEach(function(button){
+
+            button.classList.remove("active");
+
+        });
+
+
+    /*
+       Выделяем текущий язык
+    */
+
+    if(language === "ru"){
+
+        document
+            .getElementById("ruButton")
+            .classList.add("active");
+
+    }
+
+
+    if(language === "kk"){
+
+        document
+            .getElementById("kkButton")
+            .classList.add("active");
+
+    }
+
+
+    if(language === "en"){
+
+        document
+            .getElementById("enButton")
+            .classList.add("active");
+
+    }
+
+}
+
+
+/* =====================================================
+   ЗАГРУЗКА СОХРАНЁННОГО ЯЗЫКА
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const savedLanguage =
+            localStorage.getItem("aqanLanguage")
+            || "ru";
+
+
+        changeLanguage(
+            savedLanguage
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
