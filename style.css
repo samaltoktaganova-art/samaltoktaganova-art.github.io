@@ -304,3 +304,59 @@ transform:translateY(0);
     background: #d40000;
     color: white;
 }
+
+/* =========================================
+   РЕКВИЗИТЫ AQAN HOLDING
+========================================= */
+
+footer{
+    background:#1b1b1b;
+    color:white;
+    margin-top:70px;
+    padding:45px 5%;
+}
+
+.footer-info{
+    max-width:1000px;
+    margin:0 auto;
+    text-align:left;
+}
+
+.footer-info h3{
+    color:#d40000;
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+.footer-info p{
+    margin:8px 0;
+    font-size:15px;
+    line-height:1.6;
+}
+
+.footer-copy{
+    max-width:1000px;
+    margin:30px auto 0;
+    padding-top:20px;
+    border-top:1px solid #444;
+
+    text-align:center;
+
+    font-size:14px;
+    color:#aaa;
+}
+
+
+/* Для телефона */
+
+@media(max-width:700px){
+
+    footer{
+        padding:35px 20px;
+    }
+
+    .footer-info p{
+        font-size:14px;
+    }
+
+}

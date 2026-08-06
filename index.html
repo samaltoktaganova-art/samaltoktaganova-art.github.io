@@ -14,7 +14,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 html{
@@ -26,33 +26,24 @@ body{
     color:#222;
 }
 
-/* =========================
-   HEADER
-========================= */
-
 header{
     background:white;
     box-shadow:0 2px 10px rgba(0,0,0,.1);
-    position:sticky;
-    top:0;
-    z-index:1000;
 }
 
 nav{
     width:90%;
-    max-width:1400px;
     margin:auto;
     min-height:70px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:25px;
+    gap:20px;
 }
 
 .logo{
     font-size:30px;
     font-weight:bold;
-    white-space:nowrap;
 }
 
 .logo span{
@@ -74,20 +65,17 @@ nav a{
     text-decoration:none;
     color:#222;
     font-weight:bold;
-    transition:.3s;
 }
 
 nav a:hover{
     color:#d40000;
 }
 
-/* =========================
-   LANGUAGE BUTTONS
-========================= */
+/* ЯЗЫКИ */
 
 .language-switcher{
     display:flex;
-    gap:7px;
+    gap:6px;
 }
 
 .language-switcher button{
@@ -97,29 +85,21 @@ nav a:hover{
     border:none;
     border-radius:5px;
     cursor:pointer;
-    font-size:14px;
     font-weight:bold;
-    transition:.3s;
 }
 
-.language-switcher button:hover{
-    background:#d40000;
-}
-
+.language-switcher button:hover,
 .language-switcher button.active{
     background:#d40000;
 }
 
-/* =========================
-   HERO
-========================= */
+/* ГЛАВНАЯ */
 
 .hero{
     display:flex;
     align-items:center;
     justify-content:space-between;
     width:90%;
-    max-width:1400px;
     margin:60px auto;
     gap:50px;
 }
@@ -159,11 +139,10 @@ nav a:hover{
     display:block;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* КНОПКИ */
 
-.main-button{
+.main-button,
+.back-button{
     padding:15px 35px;
     background:#d40000;
     color:white;
@@ -171,17 +150,14 @@ nav a:hover{
     border-radius:5px;
     cursor:pointer;
     font-size:17px;
-    transition:.3s;
 }
 
-.main-button:hover{
+.main-button:hover,
+.back-button:hover{
     background:#a90000;
-    transform:translateY(-2px);
 }
 
-/* =========================
-   ABOUT BOX
-========================= */
+/* О КОМПАНИИ */
 
 .about-box{
     display:none;
@@ -197,17 +173,10 @@ nav a:hover{
     display:block;
 }
 
-.about-box h2{
-    margin-top:0;
-}
-
-/* =========================
-   SECTIONS
-========================= */
+/* СЕКЦИИ */
 
 section{
     width:90%;
-    max-width:1400px;
     margin:70px auto;
 }
 
@@ -222,9 +191,7 @@ section > p{
     line-height:1.8;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* ПАРТНЕРЫ */
 
 .cards{
     display:flex;
@@ -250,7 +217,6 @@ section > p{
 
 .card:hover{
     transform:translateY(-5px);
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
 .card h3{
@@ -264,61 +230,45 @@ section > p{
     line-height:1.6;
 }
 
-/* =========================
-   CONTACTS
-========================= */
+/* КОНТАКТЫ */
 
-.contacts p{
-    margin:10px 0;
+.contact-box{
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    line-height:1.8;
+}
+
+.contact-box p{
+    margin-bottom:12px;
     font-size:18px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.contact-box h3{
+    color:#d40000;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.contact-box hr{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:30px 0;
+}
+
+/* FOOTER */
 
 footer{
     background:#1b1b1b;
     color:white;
-    padding:45px 20px;
-    margin-top:70px;
-}
-
-.company-details{
-    max-width:1000px;
-    margin:0 auto;
-    line-height:1.7;
-    font-size:15px;
-}
-
-.company-details h3{
-    color:white;
-    font-size:20px;
-    margin-bottom:22px;
     text-align:center;
+    padding:30px;
+    margin-top:60px;
 }
 
-.company-details p{
-    margin:7px 0;
-    color:#ddd;
-}
-
-.company-details strong{
-    color:white;
-}
-
-.footer-copy{
-    margin-top:30px;
-    padding-top:20px;
-    border-top:1px solid #444;
-    text-align:center;
-    color:#aaa;
-    font-size:14px;
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* МОБИЛЬНАЯ ВЕРСИЯ */
 
 @media(max-width:900px){
 
@@ -330,20 +280,14 @@ footer{
     nav ul{
         flex-wrap:wrap;
         justify-content:center;
-        gap:15px;
     }
 
     .hero{
         flex-direction:column;
-        margin-top:40px;
     }
 
     .text h1{
         font-size:40px;
-    }
-
-    .image{
-        width:100%;
     }
 
 }
@@ -354,28 +298,17 @@ footer{
         flex-direction:column;
     }
 
-    .language-switcher{
-        margin-top:5px;
-    }
-
-    .hero{
-        width:92%;
-    }
-
+    .hero,
     section{
         width:92%;
     }
 
-    .text h1{
-        font-size:35px;
+    .contact-box{
+        padding:20px;
     }
 
-    h2{
-        font-size:27px;
-    }
-
-    .company-details{
-        font-size:14px;
+    .contact-box p{
+        font-size:15px;
     }
 
 }
@@ -386,8 +319,9 @@ footer{
 
 <body>
 
+
 <!-- =========================
-     HEADER
+     ШАПКА
 ========================= -->
 
 <header>
@@ -426,6 +360,7 @@ AQAN <span>HOLDING</span>
 
 </ul>
 
+
 <div class="language-switcher">
 
 <button id="ruBtn" onclick="changeLanguage('ru')">
@@ -448,7 +383,7 @@ EN
 
 
 <!-- =========================
-     HERO
+     ГЛАВНЫЙ ЭКРАН
 ========================= -->
 
 <div class="hero" id="home">
@@ -469,14 +404,15 @@ AQAN <span>HOLDING</span>
 Официальный партнер международных производителей.
 </p>
 
-<button class="main-button" onclick="showInfo()" data-i18n="more">
+<button
+class="main-button"
+onclick="showInfo()"
+data-i18n="more">
+
 Подробнее
+
 </button>
 
-
-<!-- =========================
-     ABOUT BOX
-========================= -->
 
 <div id="aboutBox" class="about-box">
 
@@ -485,37 +421,30 @@ AQAN <span>HOLDING</span>
 </h2>
 
 <p data-i18n="historyText">
-AQAN HOLDING LLP — казахстанская компания, зарегистрированная
-в городе Астана, специализирующаяся на поставке промышленного
-оборудования, электротехнической продукции и комплексных
-инженерных решений.
+AQAN HOLDING LLP — казахстанская компания, зарегистрированная в городе Астана,
+специализирующаяся на поставке промышленного оборудования, электротехнической
+продукции и комплексных инженерных решениях.
 
-Компания сотрудничает с ведущими европейскими производителями
-промышленного оборудования и является официальным партнером
-нескольких международных брендов.
+Компания сотрудничает с ведущими европейскими производителями промышленного
+оборудования и является официальным партнером нескольких международных брендов.
 
-Основной целью компании является обеспечение предприятий
-Казахстана и стран Евразийского экономического союза современным
-оборудованием высокого качества, соответствующим международным
-стандартам безопасности.
+Основной целью компании является обеспечение предприятий Казахстана и стран
+Евразийского экономического союза современным оборудованием высокого качества,
+соответствующим международным стандартам безопасности.
 
-AQAN HOLDING предоставляет услуги по поставке оборудования,
-техническому сопровождению, монтажу, сервисному обслуживанию
-и консультационной поддержке.
+AQAN HOLDING предоставляет услуги по поставке оборудования, техническому
+сопровождению, монтажу, сервисному обслуживанию и консультационной поддержке.
 
-Компания является официальным представителем европейских
-производителей и обладает эксклюзивными правами на реализацию
-продукции на территории стран ЕАЭС, что подтверждается
-сертификатами и официальными письмами партнеров.
+Компания является официальным представителем европейских производителей и
+обладает эксклюзивными правами на реализацию продукции на территории стран ЕАЭС,
+что подтверждается сертификатами и официальными письмами партнеров.
 
-Благодаря сотрудничеству с компаниями HARDO, Grupa Wolff и DEMKA
-AQAN HOLDING предлагает современные решения для промышленных
-предприятий, нефтегазовой, горнодобывающей, энергетической
-и строительной отраслей.
+Благодаря сотрудничеству с компаниями HARDO, Grupa Wolff и DEMKA AQAN HOLDING
+предлагает современные решения для промышленных предприятий, нефтегазовой,
+горнодобывающей, энергетической и строительной отраслей.
 
-Сегодня компания продолжает расширять партнерскую сеть,
-внедрять новые технологии и обеспечивать клиентов надежным
-европейским оборудованием.
+Сегодня компания продолжает расширять партнерскую сеть, внедрять новые
+технологии и обеспечивать клиентов надежным европейским оборудованием.
 </p>
 
 </div>
@@ -527,8 +456,7 @@ AQAN HOLDING предлагает современные решения для �
 
 <img
 src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200"
-alt="Промышленное оборудование"
->
+alt="Промышленное оборудование">
 
 </div>
 
@@ -536,7 +464,7 @@ alt="Промышленное оборудование"
 
 
 <!-- =========================
-     ABOUT COMPANY
+     О КОМПАНИИ
 ========================= -->
 
 <section id="about">
@@ -554,7 +482,7 @@ AQAN HOLDING занимается поставкой промышленного 
 
 
 <!-- =========================
-     PARTNERS
+     ПАРТНЕРЫ
 ========================= -->
 
 <section id="partners">
@@ -623,48 +551,70 @@ DEMKA
 
 
 <!-- =========================
-     CONTACTS
+     КОНТАКТЫ
 ========================= -->
 
-<section id="contacts" class="contacts">
+<section id="contacts">
 
 <h2 data-i18n="contactsTitle">
 Контакты
 </h2>
 
-<p>
-📍 <span data-i18n="astana">Астана, Казахстан</span>
-</p>
 
-<p>
-📧 aqanholding@gmail.com
-</p>
+<div class="contact-box">
+
 
 <p>
-📞 +7 778 638 59 78
+📍 <strong data-i18n="address">
+Адрес:
+</strong>
+
+Астана, Казахстан
 </p>
 
-</section>
+
+<p>
+📧 <strong>Email:</strong>
+aqanholding@gmail.com
+</p>
 
 
-<!-- =========================
-     FOOTER + COMPANY DETAILS
-========================= -->
+<p>
+📞 <strong data-i18n="phone">
+Телефон:
+</strong>
 
-<footer>
++7 701 710 56 52
+</p>
 
-<div class="company-details">
 
-<h3 data-i18n="companyFullName">
-Товарищество с ограниченной ответственностью «AQAN HOLDING»
+<hr>
+
+
+<h3 data-i18n="detailsTitle">
+Реквизиты компании
 </h3>
 
+
 <p>
+
+<strong data-i18n="companyName">
+Товарищество с ограниченной ответственностью «AQAN HOLDING»
+</strong>
+
+</p>
+
+
+<p>
+
 <strong data-i18n="bin">
 БИН:
 </strong>
+
 200840003272
+
 </p>
+
 
 <p>
 
@@ -694,7 +644,7 @@ DEMKA
 
 <p>
 
-<strong>
+<strong data-i18n="bankAccount">
 ИИК:
 </strong>
 
@@ -716,22 +666,11 @@ KZ68601A241013218061
 
 <p>
 
-<strong>
+<strong data-i18n="bic">
 БИК:
 </strong>
 
 HSBKKZKX
-
-</p>
-
-
-<p>
-
-<strong data-i18n="phone">
-Телефон:
-</strong>
-
-+7 701 710 56 52
 
 </p>
 
@@ -747,32 +686,45 @@ HSBKKZKX
 </p>
 
 
-<div class="footer-copy">
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
 
 <span data-i18n="copyright">
 © 2026 AQAN HOLDING. Все права защищены.
 </span>
 
-</div>
-
-</div>
-
 </footer>
 
 
 <!-- =========================
-     TRANSLATION SCRIPT
+     ПЕРЕВОДЧИК
 ========================= -->
 
 <script>
 
 const translations = {
 
+
+/* =========================
+   РУССКИЙ
+========================= */
+
 ru: {
 
 home:"Главная",
+
 about:"О компании",
+
 partners:"Партнеры",
+
 contacts:"Контакты",
 
 heroText1:
@@ -788,7 +740,7 @@ historyTitle:
 "История AQAN HOLDING",
 
 historyText:
-`AQAN HOLDING LLP — казахстанская компания, зарегистрированная в городе Астана, специализирующаяся на поставке промышленного оборудования, электротехнической продукции и комплексных инженерных решений.
+`AQAN HOLDING LLP — казахстанская компания, зарегистрированная в городе Астана, специализирующаяся на поставке промышленного оборудования, электротехнической продукции и комплексных инженерных решениях.
 
 Компания сотрудничает с ведущими европейскими производителями промышленного оборудования и является официальным партнером нескольких международных брендов.
 
@@ -806,7 +758,7 @@ aboutTitle:
 "О компании",
 
 aboutText:
-"АQAN HOLDING занимается поставкой промышленного оборудования, кабельной продукции, монтажом и технической поддержкой.",
+"AQAN HOLDING занимается поставкой промышленного оборудования, кабельной продукции, монтажом и технической поддержкой.",
 
 partnersTitle:
 "Наши партнеры",
@@ -823,10 +775,16 @@ demkaCard:
 contactsTitle:
 "Контакты",
 
-astana:
-"Астана, Казахстан",
+address:
+"Адрес:",
 
-companyFullName:
+phone:
+"Телефон:",
+
+detailsTitle:
+"Реквизиты компании",
+
+companyName:
 "Товарищество с ограниченной ответственностью «AQAN HOLDING»",
 
 bin:
@@ -841,11 +799,14 @@ registrationDate:
 legalAddress:
 "Юридический адрес:",
 
+bankAccount:
+"ИИК:",
+
 bank:
 "Банк:",
 
-phone:
-"Телефон:",
+bic:
+"БИК:",
 
 director:
 "Директор:",
@@ -856,11 +817,18 @@ copyright:
 },
 
 
+/* =========================
+   КАЗАХСКИЙ
+========================= */
+
 kk: {
 
 home:"Басты бет",
+
 about:"Компания туралы",
+
 partners:"Серіктестер",
+
 contacts:"Байланыстар",
 
 heroText1:
@@ -911,10 +879,16 @@ demkaCard:
 contactsTitle:
 "Байланыстар",
 
-astana:
-"Астана, Қазақстан",
+address:
+"Мекенжай:",
 
-companyFullName:
+phone:
+"Телефон:",
+
+detailsTitle:
+"Компанияның реквизиттері",
+
+companyName:
 "«AQAN HOLDING» жауапкершілігі шектеулі серіктестігі",
 
 bin:
@@ -929,11 +903,14 @@ registrationDate:
 legalAddress:
 "Заңды мекенжайы:",
 
+bankAccount:
+"ЖСК:",
+
 bank:
 "Банк:",
 
-phone:
-"Телефон:",
+bic:
+"БСК:",
 
 director:
 "Директор:",
@@ -944,11 +921,18 @@ copyright:
 },
 
 
+/* =========================
+   АНГЛИЙСКИЙ
+========================= */
+
 en: {
 
 home:"Home",
+
 about:"About Company",
+
 partners:"Partners",
+
 contacts:"Contacts",
 
 heroText1:
@@ -999,10 +983,16 @@ demkaCard:
 contactsTitle:
 "Contacts",
 
-astana:
-"Astana, Kazakhstan",
+address:
+"Address:",
 
-companyFullName:
+phone:
+"Phone:",
+
+detailsTitle:
+"Company Details",
+
+companyName:
 "Limited Liability Partnership «AQAN HOLDING»",
 
 bin:
@@ -1017,11 +1007,14 @@ registrationDate:
 legalAddress:
 "Legal address:",
 
+bankAccount:
+"IBAN:",
+
 bank:
 "Bank:",
 
-phone:
-"Phone:",
+bic:
+"BIC:",
 
 director:
 "Director:",
@@ -1035,7 +1028,7 @@ copyright:
 
 
 /* =========================
-   CHANGE LANGUAGE
+   СМЕНА ЯЗЫКА
 ========================= */
 
 function changeLanguage(language){
@@ -1045,7 +1038,8 @@ document.querySelectorAll("[data-i18n]");
 
 elements.forEach(function(element){
 
-const key = element.getAttribute("data-i18n");
+const key =
+element.getAttribute("data-i18n");
 
 if(translations[language][key]){
 
@@ -1057,27 +1051,18 @@ translations[language][key];
 });
 
 
-/* Меняем title страницы */
-
-if(language === "ru"){
-document.title = "AQAN HOLDING";
-}
-
-if(language === "kk"){
-document.title = "AQAN HOLDING";
-}
-
-if(language === "en"){
-document.title = "AQAN HOLDING";
-}
-
-
-/* Запоминаем выбранный язык */
+/* Запоминаем язык */
 
 localStorage.setItem(
 "aqanLanguage",
 language
 );
+
+
+/* Меняем язык страницы */
+
+document.documentElement.lang =
+language;
 
 
 /* Активная кнопка */
@@ -1092,31 +1077,31 @@ button.classList.remove("active");
 
 
 if(language === "ru"){
+
 document.getElementById("ruBtn")
 .classList.add("active");
+
 }
 
 if(language === "kk"){
+
 document.getElementById("kkBtn")
 .classList.add("active");
+
 }
 
 if(language === "en"){
+
 document.getElementById("enBtn")
 .classList.add("active");
+
 }
-
-
-/* Язык HTML */
-
-document.documentElement.lang =
-language === "kk" ? "kk" : language;
 
 }
 
 
 /* =========================
-   КНОПКА «ПОДРОБНЕЕ»
+   КНОПКА ПОДРОБНЕЕ
 ========================= */
 
 function showInfo(){
@@ -1130,7 +1115,7 @@ box.classList.toggle("show");
 
 
 /* =========================
-   ЗАГРУЗКА СОХРАНЁННОГО ЯЗЫКА
+   ЗАПУСК
 ========================= */
 
 document.addEventListener(
